@@ -1,0 +1,84 @@
+<!doctype html>
+<html>
+ <head>
+  <title> new document </title>
+  <meta name="author" content="NE">
+  <meta name="keywords" content="">
+  <meta name="description" content="">
+  <style>
+
+	dt,dd,
+	ul,li{
+		padding: 0;
+		margin: 0;
+	}
+
+	body {
+		font-size: 12px;
+	}
+	.nav {
+		position: relative;
+		height: 20px;
+	}
+	.nav-menu {
+		position: absolute;
+		top: 0;
+		left: 0;
+		color: #fff;
+		background: #0375C4;
+		width: 110px;
+	}
+	.nav-menu dt:hover {
+		text-decoration: underline;
+		cursor: pointer;
+	}
+	.nav-menu dd{
+		display:none;
+	}
+	.nav-menu:hover {
+		box-shadow: 1px 1px 3px #292929;
+		opacity: 0.9;
+	}
+	.nav-menu:hover dd {
+		display: block;	
+	}
+	.nav-menu dd a:link{
+		color: #BEDBEF;
+		text-decoration: none;
+	}
+	.nav-menu:hover dd a{
+		display: block;
+		margin: 10px 0;
+	}
+	.nav-menu:hover a:hover {
+		color: #fff;
+		text-decoration: underline;
+	}
+	.nav-menu ul {
+		padding-left: 20px;
+		list-style-image: url(arrow.jpg);
+	}
+  
+  </style>
+ </head>
+
+ <body>
+  <img alt="demo" src="demo.png" />
+<div class="nav">
+	<dl class="nav-menu">
+		<dt>我的个人中心<span>v</span></dt>
+		<dd>
+			<ul>
+				<li><a href="#">我的足迹</a></li>
+				<li><a href="#">我的旅程</a></li>
+				<li><a href="#">我的游记</a></li>
+				<li><a href="#">我的微游记</a></li>
+				<li><a href="#">动态汇总</a></li>
+			</ul>
+		</dd>
+	</dl>
+</div>
+<p> there some text go here~~~ </p>
+
+ </body>
+</html>

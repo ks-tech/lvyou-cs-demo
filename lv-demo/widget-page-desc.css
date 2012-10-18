@@ -1,0 +1,46 @@
+.page-desc {
+	position: fixed;
+	z-index: 15;
+	left: 0;
+	top: 30px;
+}
+.page-desc dt {
+	
+	transform: rotate(33deg);
+	position: relative;
+	/*transform-origin: 0 30px;*/
+	width: 100px;
+	background: #E1E91D;
+	border: 5px solid orange;
+	padding: 3px;
+	/*
+	box-shadow: 6px 6px rgba(122, 100, 100, 0.5);
+	-ie-box-shadow: none;*/
+	cursor: pointer;
+}
+.page-desc dd {
+	background: white;
+	padding: 5px;
+	border: 2px solid;
+	border-radius: 10px;
+	position: relative;
+	z-index: 15;
+	display: none;
+}
+.page-desc dt:hover + dd,
+.page-desc dd:hover
+ {
+	display: block;
+} 
+.page-desc dd > *:nth-child(1){
+	color: green;
+}
+.page-desc dd > *:nth-child(2){
+	color: gray;
+}
+.page-desc dd > *:nth-child(3){
+	color: orange;
+}
+.page-desc dd > *:nth-child(4){
+	color: red;
+}
